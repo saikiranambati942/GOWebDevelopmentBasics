@@ -6,11 +6,11 @@ import (
 	"net"
 )
 
-func main(){
-	conn,err:=net.Dial("tcp",":8080")
-	if err!=nil{
+func main() {
+	conn, err := net.Dial("tcp", ":8080")
+	if err != nil {
 		log.Panic(err)
 	}
 	defer conn.Close()
-	io.WriteString(conn,"I dailed you:")
+	io.WriteString(conn, "I dailed you:")
 }

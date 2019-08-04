@@ -21,7 +21,7 @@ func main() {
 
 		io.WriteString(conn, "\n Hello from TCP Server")
 		fmt.Fprintln(conn, "\n I hope you are good")
-		fmt.Fprintln(conn,"\n My name is Sai:")
+		fmt.Fprintln(conn, "\n My name is Sai:")
 		conn.Close()
 	}
 }

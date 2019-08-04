@@ -7,38 +7,36 @@ import (
 	"net"
 )
 
-func main(){
-	li,err:=net.Listen("tcp",":8080")
-	if err!=nil{
+func main() {
+	li, err := net.Listen("tcp", ":8080")
+	if err != nil {
 		log.Panic(err)
 	}
 	defer li.Close()
 
 	for {
-		conn,err:=li.Accept()
-		if err!=nil{
+		conn, err := li.Accept()
+		if err != nil {
 			log.Println(err)
 		}
 		go Handle(conn)
 
-
 	}
 }
 
-
-func Handle(conn net.Conn){
+func Handle(conn net.Conn) {
 	//err:=conn.SetDeadline(time.Now().Add(time.Second*10))
 	//if err!=nil{
 	//	log.Println("CONN TIMEOUT")
 	//}
-scanner:=bufio.NewScanner(conn)
-for scanner.Scan(){
-	ln:=scanner.Text()
-	fmt.Println(ln)
-	fmt.Fprintf(conn,"I heard you say : %s\n",ln)
-}
+	scanner := bufio.NewScanner(conn)
+	for scanner.Scan() {
+		ln := scanner.Text()
+		fmt.Println(ln)
+		fmt.Fprintf(conn, "I heard you say : %s\n", ln)
+	}
 
 	defer conn.Close()
 
-fmt.Println("Code got here")
+	fmt.Println("Code got here")
 }

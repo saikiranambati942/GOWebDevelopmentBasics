@@ -4,12 +4,13 @@ import (
 	"fmt"
 	"net/http"
 )
+
 type hotdog int
 
-func (m hotdog) ServeHTTP(w http.ResponseWriter,r *http.Request){
-fmt.Fprintln(w,"Any code you request")
+func (m hotdog) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Any code you request")
 }
-func main(){
+func main() {
 	var d hotdog
-http.ListenAndServe(":8080",d)
+	http.ListenAndServe(":8080", d)
 }

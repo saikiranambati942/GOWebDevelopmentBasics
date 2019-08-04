@@ -5,17 +5,13 @@ import (
 	"net/http"
 )
 
-
-
-
-func main(){
-	http.HandleFunc("/",foo)
-http.ListenAndServe(":8080",nil)
+func main() {
+	http.HandleFunc("/", foo)
+	http.ListenAndServe(":8080", nil)
 
 }
 
-
-func foo(w http.ResponseWriter, r *http.Request){
-	v:=r.FormValue("q")
-	io.WriteString(w,"search string is : "+v)
+func foo(w http.ResponseWriter, r *http.Request) {
+	v := r.FormValue("q")
+	io.WriteString(w, "search string is : "+v)
 }
