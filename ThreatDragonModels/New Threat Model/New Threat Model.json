@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "fdfdd97e-6136-4e0e-bbb1-aa3e73aa2183",
             "zIndex": 1,
+            "id": "fdfdd97e-6136-4e0e-bbb1-aa3e73aa2183",
             "data": {
               "type": "tm.Process",
               "name": "Web Server",
@@ -102,7 +102,7 @@
             },
             "attrs": {
               "text": {
-                "text": "User"
+                "text": "Browser"
               },
               "body": {
                 "stroke": "#333333",
@@ -112,11 +112,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "3d12b422-c64e-4057-8b9a-73154937163c",
             "zIndex": 3,
+            "id": "3d12b422-c64e-4057-8b9a-73154937163c",
             "data": {
               "type": "tm.Actor",
-              "name": "User",
+              "name": "Browser",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
