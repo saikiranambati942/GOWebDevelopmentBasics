@@ -294,6 +294,49 @@
             "labels": [
               "Query"
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d0cfd7cf-b0ae-4b32-9919-0196e4bb8016",
+            "source": {
+              "x": 926,
+              "y": 450
+            },
+            "target": {
+              "cell": "fdfdd97e-6136-4e0e-bbb1-aa3e73aa2183"
+            },
+            "vertices": [
+              {
+                "x": 720,
+                "y": 470
+              }
+            ]
           }
         ]
       }
