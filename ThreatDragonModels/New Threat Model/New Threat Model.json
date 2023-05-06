@@ -313,7 +313,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Query Result",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -336,6 +336,9 @@
                 "x": 720,
                 "y": 470
               }
+            ],
+            "labels": [
+              "Query Result"
             ]
           }
         ]
